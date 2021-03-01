@@ -14,7 +14,6 @@ CREATE TABLE [Person]
  [PhoneNumber]       nvarchar(25) NOT NULL ,
  [PhoneNumberType]   nvarchar(50) NOT NULL ,
 
-
  CONSTRAINT [PK_person] PRIMARY KEY CLUSTERED ([BussinessEntityID] ASC)
 );
 GO
@@ -31,7 +30,6 @@ CREATE TABLE [Address]
  [CountryRegionCode] nvarchar(3) NOT NULL ,
  [CountryRegionName] nvarchar(50) NOT NULL ,
  [PostalCode]        nvarchar(15) NULL ,
-
 
  CONSTRAINT [PK_address] PRIMARY KEY CLUSTERED ([AddressID] ASC)
 );
@@ -54,7 +52,6 @@ CREATE TABLE [SalesOrder]
  [ShipBase]        money NOT NULL ,
  [ShipRate]        money NOT NULL ,
 
-
  CONSTRAINT [PK_salesorder] PRIMARY KEY CLUSTERED ([SalesOrderID] ASC)
 );
 GO
@@ -67,7 +64,6 @@ CREATE TABLE [Date]
  [OrderDate] datetime NOT NULL ,
  [DueDate]   datetime NOT NULL ,
  [ShipDate]  datetime NOT NULL ,
-
 
  CONSTRAINT [PK_date] PRIMARY KEY CLUSTERED ([DateID] ASC)
 );
@@ -83,7 +79,6 @@ CREATE TABLE [Facts]
  [SalesOrderID] int NOT NULL ,
  [DateID]       int NOT NULL ,
 
-
  CONSTRAINT [PK_facts] PRIMARY KEY CLUSTERED ([FactID] ASC, [AddressID] ASC, [PersonID] ASC, [SalesOrderID] ASC, [DateID] ASC),
  CONSTRAINT [FK_39] FOREIGN KEY ([AddressID])  REFERENCES [Address]([AddressID]),
  CONSTRAINT [FK_42] FOREIGN KEY ([PersonID])  REFERENCES [Person]([BussinessEntityID]),
@@ -96,26 +91,22 @@ CREATE NONCLUSTERED INDEX [fkIdx_40] ON [Facts]
  (
   [AddressID] ASC
  )
-
 GO
 
 CREATE NONCLUSTERED INDEX [fkIdx_43] ON [Facts] 
  (
   [PersonID] ASC
  )
-
 GO
 
 CREATE NONCLUSTERED INDEX [fkIdx_60] ON [Facts] 
  (
   [SalesOrderID] ASC
  )
-
 GO
 
 CREATE NONCLUSTERED INDEX [fkIdx_69] ON [Facts] 
  (
   [DateID] ASC
  )
-
 GO
