@@ -5,7 +5,7 @@ USE PersonWH
 
 CREATE TABLE [Person]
 (
- [BussinessEntityID] int NOT NULL ,
+ [BussinessEntityID] int PRIMARY KEY IDENTITY NOT NULL ,
  [PersonType]        nvarchar(2) NOT NULL ,
  [Sex]               nvarchar(10) NOT NULL ,
  [Name]              nvarchar(150) NOT NULL ,
@@ -22,7 +22,7 @@ GO
 
 CREATE TABLE [Address]
 (
- [AddressID]         int NOT NULL ,
+ [AddressID]         int PRIMARY KEY IDENTITY NOT NULL ,
  [AddressLine]       nvarchar(120) NOT NULL ,
  [City]              nvarchar(30) NOT NULL ,
  [StateProvinceCode] nvarchar(3) NOT NULL ,
@@ -39,7 +39,7 @@ GO
 
 CREATE TABLE [SalesOrder]
 (
- [SalesOrderID]    int NOT NULL ,
+ [SalesOrderID]    int PRIMARY KEY IDENTITY NOT NULL ,
  [OnlineOrderFlag] smallint NOT NULL ,
  [OrderQty]        smallint NOT NULL ,
  [ProductID]       int NOT NULL ,
@@ -60,7 +60,7 @@ GO
 
 CREATE TABLE [Date]
 (
- [DateID]    int NOT NULL ,
+ [DateID]    int PRIMARY KEY IDENTITY NOT NULL ,
  [OrderDate] datetime NOT NULL ,
  [DueDate]   datetime NOT NULL ,
  [ShipDate]  datetime NOT NULL ,
@@ -73,7 +73,7 @@ GO
 
 CREATE TABLE [Facts]
 (
- [FactID]       int NOT NULL ,
+ [FactID]       int PRIMARY KEY IDENTITY NOT NULL ,
  [AddressID]    int NOT NULL ,
  [PersonID]     int NOT NULL ,
  [SalesOrderID] int NOT NULL ,
