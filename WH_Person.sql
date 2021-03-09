@@ -1,5 +1,7 @@
 CREATE DATABASE WH_Person
+GO
 USE WH_Person
+GO
 
 -- ************************************** [Person]
 
@@ -12,9 +14,7 @@ CREATE TABLE [PersonDim]
  [EmailPromotion]    int NOT NULL,
  [EmailAddress]      nvarchar(50) NULL,
  [PhoneNumber]       nvarchar(25) NOT NULL,
- [PhoneNumberType]   nvarchar(50) NOT NULL,
-
- CONSTRAINT [PK_person] PRIMARY KEY CLUSTERED ([BussinessEntityID] ASC)
+ [PhoneNumberType]   nvarchar(50) NOT NULL
 );
 GO
 
@@ -29,9 +29,7 @@ CREATE TABLE [AddressDim]
  [StateProvinceName] nvarchar(50) NOT NULL,
  [CountryRegionCode] nvarchar(3) NOT NULL,
  [CountryRegionName] nvarchar(50) NOT NULL,
- [PostalCode]        nvarchar(15) NULL,
-
- CONSTRAINT [PK_address] PRIMARY KEY CLUSTERED ([AddressID] ASC)
+ [PostalCode]        nvarchar(15) NULL
 );
 GO
 
@@ -50,9 +48,7 @@ CREATE TABLE [SalesOrderDim]
  [TotalDue]        AS isnull(([SubTotal]+[TaxAmt])+[Freight],(0)),
  [ShipMethod]      nvarchar(50) NOT NULL,
  [ShipBase]        money NOT NULL,
- [ShipRate]        money NOT NULL,
-
- CONSTRAINT [PK_salesorder] PRIMARY KEY CLUSTERED ([SalesOrderID] ASC)
+ [ShipRate]        money NOT NULL
 );
 GO
 
@@ -63,9 +59,7 @@ CREATE TABLE [DateDim]
  [DateID]    int PRIMARY KEY IDENTITY NOT NULL,
  [OrderDate] datetime NOT NULL,
  [DueDate]   datetime NOT NULL,
- [ShipDate]  datetime NOT NULL,
-
- CONSTRAINT [PK_date] PRIMARY KEY CLUSTERED ([DateID] ASC)
+ [ShipDate]  datetime NOT NULL
 );
 GO
 
@@ -79,7 +73,6 @@ CREATE TABLE [Facts]
  [SalesOrderID] int NOT NULL,
  [DateID]       int NOT NULL,
 
- CONSTRAINT [PK_facts] PRIMARY KEY CLUSTERED ([FactID] ASC, [AddressID] ASC, [PersonID] ASC, [SalesOrderID] ASC, [DateID] ASC),
  CONSTRAINT [FK_39] FOREIGN KEY ([AddressID])  REFERENCES [AddressDim]([AddressID]),
  CONSTRAINT [FK_42] FOREIGN KEY ([PersonID])  REFERENCES [PersonDim]([BussinessEntityID]),
  CONSTRAINT [FK_59] FOREIGN KEY ([SalesOrderID])  REFERENCES [SalesOrderDim]([SalesOrderID]),
