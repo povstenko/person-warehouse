@@ -14,7 +14,9 @@ CREATE TABLE [PersonDim]
  [EmailPromotion]    int NOT NULL,
  [EmailAddress]      nvarchar(50) NULL,
  [PhoneNumber]       nvarchar(25) NOT NULL,
- [PhoneNumberType]   nvarchar(50) NOT NULL
+ [PhoneNumberType]   nvarchar(50) NOT NULL,
+ StartDate           datetime NOT NULL,
+ EndDate             datetime NULL
 );
 GO
 
@@ -29,7 +31,9 @@ CREATE TABLE [AddressDim]
  [StateProvinceName] nvarchar(50) NOT NULL,
  [CountryRegionCode] nvarchar(3) NOT NULL,
  [CountryRegionName] nvarchar(50) NOT NULL,
- [PostalCode]        nvarchar(15) NULL
+ [PostalCode]        nvarchar(15) NULL,
+ StartDate           datetime NOT NULL,
+ EndDate             datetime NULL
 );
 GO
 
