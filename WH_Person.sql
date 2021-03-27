@@ -10,7 +10,7 @@ CREATE TABLE [PersonDim]
  [BussinessEntityID] int PRIMARY KEY IDENTITY NOT NULL,
  [PersonType]        nvarchar(2) NOT NULL,
  [Sex]               nvarchar(10) NULL,
- [Name]              nvarchar(150) NULL,
+ [Name]              nvarchar(152) NULL,
  [EmailPromotion]    int NOT NULL,
  [EmailAddress]      nvarchar(50) NULL,
  [PhoneNumber]       nvarchar(25) NOT NULL,
@@ -25,7 +25,7 @@ GO
 CREATE TABLE [AddressDim]
 (
  [AddressID]         int PRIMARY KEY IDENTITY NOT NULL,
- [AddressLine]       nvarchar(120) NOT NULL,
+ [AddressLine]       nvarchar(121) NOT NULL,
  [City]              nvarchar(30) NOT NULL,
  [StateProvinceCode] nvarchar(3) NOT NULL,
  [StateProvinceName] nvarchar(50) NOT NULL,
@@ -48,8 +48,8 @@ CREATE TABLE [SalesOrderDim]
  [UnitPrice]       money NOT NULL,
  [SubTotal]        money NOT NULL,
  [TaxAmt]          money NOT NULL,
- [Freight]          money NOT NULL,
- [TotalDue]        AS isnull(([SubTotal]+[TaxAmt])+[Freight],(0)),
+ [Freight]         money NOT NULL,
+ [TotalDue]        money NOT NULL,
  [ShipMethod]      nvarchar(50) NOT NULL,
  [ShipBase]        money NOT NULL,
  [ShipRate]        money NOT NULL
