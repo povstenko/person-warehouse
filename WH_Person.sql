@@ -9,8 +9,8 @@ CREATE TABLE [PersonDim]
 (
  [BussinessEntityID] int PRIMARY KEY IDENTITY NOT NULL,
  [PersonType]        nvarchar(2) NOT NULL,
- [Sex]               nvarchar(10) NOT NULL,
- [Name]              nvarchar(150) NOT NULL,
+ [Sex]               nvarchar(10) NULL,
+ [Name]              nvarchar(150) NULL,
  [EmailPromotion]    int NOT NULL,
  [EmailAddress]      nvarchar(50) NULL,
  [PhoneNumber]       nvarchar(25) NOT NULL,
