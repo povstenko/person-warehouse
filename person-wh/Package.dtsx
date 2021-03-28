@@ -11,8 +11,8 @@
   DTS:LocaleID="1058"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{B2F159E6-F4AE-495E-BC1E-3415AE0C783C}">
+  DTS:VersionBuild="54"
+  DTS:VersionGUID="{60D86B54-FB28-415B-9260-8CB8EDC1ABDD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,62 +37,82 @@
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="AddressID"
-              DTS:DTSID="{47854D26-65C8-426D-A3F8-E2FD55F68800}"
+              DTS:ObjectName="SalesOrderID"
+              DTS:DTSID="{09C69A29-FF86-45C1-B28A-7B8B7A511C8E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="60"
-              DTS:DataType="130"
+              DTS:DataType="11"
               DTS:TextQualified="True"
-              DTS:ObjectName="AddressLine1"
-              DTS:DTSID="{61A5C8FE-71D9-48F6-9833-81F52B8A4A84}"
+              DTS:ObjectName="OnlineOrderFlag"
+              DTS:DTSID="{CE8DA5D5-34B9-4A02-A99F-803878BACDF3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="60"
-              DTS:DataType="130"
+              DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="AddressLine2"
-              DTS:DTSID="{051914CE-C50D-4F40-B7EC-CB7CD99D76DD}"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{3C28AAAE-583F-4A07-829E-5D8F76BE04B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="30"
-              DTS:DataType="130"
+              DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="City"
-              DTS:DTSID="{8A6B341D-A634-4EF7-82C0-FA9E997D8606}"
+              DTS:ObjectName="SubTotal"
+              DTS:DTSID="{4B29BC1E-9108-4E3F-8C5C-AF2BF416E927}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="15"
-              DTS:DataType="130"
+              DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="PostalCode"
-              DTS:DTSID="{D451E562-C777-473D-9084-D1A76C602153}"
+              DTS:ObjectName="TaxAmt"
+              DTS:DTSID="{1E27CDE3-7BBF-4441-9A1C-FCDF0738CA16}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="130"
+              DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="StateProvinceCode"
-              DTS:DTSID="{CB633114-33FE-41D1-84C8-E3281ABF676F}"
+              DTS:ObjectName="Freight"
+              DTS:DTSID="{D1665242-3227-4F9A-9A1D-D1ADFF3E5B52}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="130"
+              DTS:DataType="2"
               DTS:TextQualified="True"
-              DTS:ObjectName="CountryRegionCode"
-              DTS:DTSID="{B93901E6-ED7C-43D7-B5B6-538094198AD3}"
+              DTS:ObjectName="OrderQty"
+              DTS:DTSID="{1D3C5B5E-32BB-4AE5-A2D2-064E6BB0EF56}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductID"
+              DTS:DTSID="{937A68A3-49EF-4AFF-8F8A-ACBBF3B2EF6B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitPrice"
+              DTS:DTSID="{FF728A2E-907C-4100-92C7-2471DBE43954}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="38"
+              DTS:DataScale="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LineTotal"
+              DTS:DTSID="{E3733F01-4E85-409D-A872-D741F6996B49}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -100,42 +120,56 @@
               DTS:MaximumWidth="50"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="StateProvinceName"
-              DTS:DTSID="{30F41B27-764F-453A-BB79-A57E37A21B19}"
+              DTS:ObjectName="ShipMethod"
+              DTS:DTSID="{6F88DDD2-32C9-4992-85C0-415871991D7A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="CountryRegionName"
-              DTS:DTSID="{181D5F89-24BB-4EAB-BF77-AC846BD9B25B}"
+              DTS:ObjectName="ShipBase"
+              DTS:DTSID="{C2E9447F-AA03-4995-87ED-A97D493F7521}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="121"
-              DTS:DataType="130"
+              DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="AddressLine"
-              DTS:DTSID="{525B65FD-A72E-4EB7-8964-E5CC3E936794}"
+              DTS:ObjectName="ShipRate"
+              DTS:DTSID="{D0C2D923-3B77-493F-BDCA-D7DF556E221D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalDue"
+              DTS:DTSID="{19EB184D-60CC-4325-9BC7-3AD9A75DB88A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="135"
               DTS:TextQualified="True"
-              DTS:ObjectName="StartDate"
-              DTS:DTSID="{979226B1-B822-449D-B34E-BBB4187DDB7A}"
+              DTS:ObjectName="OrderDate"
+              DTS:DTSID="{B59F700C-8BB9-401D-A562-87D311DED699}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="135"
               DTS:TextQualified="True"
-              DTS:ObjectName="EndDate"
-              DTS:DTSID="{B9880C24-476C-4E67-BC5D-3EFCCDB2106E}"
+              DTS:ObjectName="DueDate"
+              DTS:DTSID="{54E6C9B9-F801-427E-B3B6-F9EC80EDDCA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ShipDate"
+              DTS:DTSID="{DC06C92E-B442-46D6-AD3C-F27D817ED5FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -143,7 +177,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{68D51C8A-81AA-4FFE-8ED9-86D65F0FE782}"
+              DTS:DTSID="{557F1AAC-CB5D-463A-974B-66C740E1F136}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -151,7 +185,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{485C9598-CE9B-4B06-AA84-2051FE659FCF}"
+              DTS:DTSID="{E040BF42-51E9-4FC2-9BB6-93C2345B7760}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -283,6 +317,180 @@
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
               DTS:DTSID="{A72B36EF-DAA1-436F-91EB-6871EE345729}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{ED5E9B39-9584-409D-8C1A-A1CF59648CE0}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1058"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1251"
+          DTS:ConnectionString="C:\Users\vital\Documents\sql\person-warehouse\datedim.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesOrderID"
+              DTS:DTSID="{72D48A21-122D-43A2-AF3B-8ED19733012E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OnlineOrderFlag"
+              DTS:DTSID="{DE5E3537-F165-457E-B9EB-C2A12A0304DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{925CAE60-4AA5-4AFB-BE9A-61BAD5256CB1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SubTotal"
+              DTS:DTSID="{BD66FC34-4133-4D6F-926C-39DAA83E9908}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TaxAmt"
+              DTS:DTSID="{351ECD19-27C8-45CC-9769-BFCB3A868906}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Freight"
+              DTS:DTSID="{B1D67DDB-A227-4E1B-A5C6-DDDE0C987098}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderQty"
+              DTS:DTSID="{1B1542F0-5FDE-4FC7-A545-C527CB91BCF6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductID"
+              DTS:DTSID="{4AD15147-FBAB-444E-8179-16F56B2A020F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitPrice"
+              DTS:DTSID="{B36FCFA7-6875-428A-AD75-5A59826A2A53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="38"
+              DTS:DataScale="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LineTotal"
+              DTS:DTSID="{0DB05F47-6B48-48E1-8340-7CA1841BE084}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ShipMethod"
+              DTS:DTSID="{ABE8AC3E-F37E-4014-9AD9-0B404399C95F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ShipBase"
+              DTS:DTSID="{BC9A481C-EA37-4E01-8457-A808E6948F19}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ShipRate"
+              DTS:DTSID="{C97E09B0-CC0A-4C63-9DEE-18D09BA6FFD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalDue"
+              DTS:DTSID="{86E6E792-0661-4B4C-B4D7-70FF1698D8B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderDate"
+              DTS:DTSID="{C5D9BE7C-FBE7-4062-8A48-2F65B62A14DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DueDate"
+              DTS:DTSID="{F457232D-EB9E-4B9B-BC23-067DC2BBB34D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ShipDate"
+              DTS:DTSID="{FF0987F6-FFF3-48E6-9AE1-2993C335BFDB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{9FD9E5CF-72C1-4825-87BF-27A0D56608EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{136FED29-1A9C-4714-9B82-F76325D6DF52}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -858,87 +1066,6 @@
                       name="Flat File Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[AddressID]"
-                          cachedDataType="i4"
-                          cachedName="AddressID"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AddressID]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim.Outputs[Merge Join Output].Columns[AddressID]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[AddressLine1]"
-                          cachedDataType="wstr"
-                          cachedLength="60"
-                          cachedName="AddressLine1"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AddressLine1]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim.Outputs[Merge Join Output].Columns[AddressLine1]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[AddressLine2]"
-                          cachedDataType="wstr"
-                          cachedLength="60"
-                          cachedName="AddressLine2"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AddressLine2]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim.Outputs[Merge Join Output].Columns[AddressLine2]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[City]"
-                          cachedDataType="wstr"
-                          cachedLength="30"
-                          cachedName="City"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[City]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim.Outputs[Merge Join Output].Columns[City]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[PostalCode]"
-                          cachedDataType="wstr"
-                          cachedLength="15"
-                          cachedName="PostalCode"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PostalCode]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim.Outputs[Merge Join Output].Columns[PostalCode]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[StateProvinceCode]"
-                          cachedDataType="wstr"
-                          cachedLength="3"
-                          cachedName="StateProvinceCode"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StateProvinceCode]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim.Outputs[Merge Join Output].Columns[StateProvinceCode]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[CountryRegionCode]"
-                          cachedDataType="wstr"
-                          cachedLength="3"
-                          cachedName="CountryRegionCode"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CountryRegionCode]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim.Outputs[Merge Join Output].Columns[CountryRegionCode]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[StateProvinceName]"
-                          cachedDataType="wstr"
-                          cachedLength="50"
-                          cachedName="StateProvinceName"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StateProvinceName]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim.Outputs[Merge Join Output].Columns[StateProvinceName]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[CountryRegionName]"
-                          cachedDataType="wstr"
-                          cachedLength="50"
-                          cachedName="CountryRegionName"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CountryRegionName]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim.Outputs[Merge Join Output].Columns[CountryRegionName]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[AddressLine]"
-                          cachedDataType="wstr"
-                          cachedLength="121"
-                          cachedName="AddressLine"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AddressLine]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Derived Column.Outputs[Derived Column Output].Columns[AddressLine]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[StartDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="StartDate"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StartDate]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Derived Column.Outputs[Derived Column Output].Columns[StartDate]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[EndDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="EndDate"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EndDate]"
-                          lineageId="Package\WH_Person\Data Flow Task AddressDim\Derived Column.Outputs[Derived Column Output].Columns[EndDate]" />
-                        <inputColumn
                           refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
                           cachedDataType="i4"
                           cachedName="ErrorCode"
@@ -954,63 +1081,6 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AddressID]"
-                          dataType="i4"
-                          name="AddressID" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AddressLine1]"
-                          dataType="wstr"
-                          length="60"
-                          name="AddressLine1" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AddressLine2]"
-                          dataType="wstr"
-                          length="60"
-                          name="AddressLine2" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[City]"
-                          dataType="wstr"
-                          length="30"
-                          name="City" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PostalCode]"
-                          dataType="wstr"
-                          length="15"
-                          name="PostalCode" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StateProvinceCode]"
-                          dataType="wstr"
-                          length="3"
-                          name="StateProvinceCode" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CountryRegionCode]"
-                          dataType="wstr"
-                          length="3"
-                          name="CountryRegionCode" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StateProvinceName]"
-                          dataType="wstr"
-                          length="50"
-                          name="StateProvinceName" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CountryRegionName]"
-                          dataType="wstr"
-                          length="50"
-                          name="CountryRegionName" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AddressLine]"
-                          dataType="wstr"
-                          length="121"
-                          name="AddressLine" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StartDate]"
-                          dataType="dbTimeStamp"
-                          name="StartDate" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EndDate]"
-                          dataType="dbTimeStamp"
-                          name="EndDate" />
-                        <externalMetadataColumn
                           refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
                           dataType="i4"
                           name="ErrorCode" />
@@ -1018,6 +1088,77 @@
                           refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                           dataType="i4"
                           name="ErrorColumn" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesOrderID]"
+                          dataType="i4"
+                          name="SalesOrderID" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OnlineOrderFlag]"
+                          dataType="bool"
+                          name="OnlineOrderFlag" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerID]"
+                          dataType="i4"
+                          name="CustomerID" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SubTotal]"
+                          dataType="cy"
+                          name="SubTotal" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TaxAmt]"
+                          dataType="cy"
+                          name="TaxAmt" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Freight]"
+                          dataType="cy"
+                          name="Freight" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderQty]"
+                          dataType="i2"
+                          name="OrderQty" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
+                          dataType="i4"
+                          name="ProductID" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UnitPrice]"
+                          dataType="cy"
+                          name="UnitPrice" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineTotal]"
+                          dataType="numeric"
+                          name="LineTotal"
+                          precision="38"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipMethod]"
+                          dataType="wstr"
+                          length="50"
+                          name="ShipMethod" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipBase]"
+                          dataType="cy"
+                          name="ShipBase" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipRate]"
+                          dataType="cy"
+                          name="ShipRate" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TotalDue]"
+                          dataType="cy"
+                          name="TotalDue" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderDate]"
+                          dataType="dbTimeStamp"
+                          name="OrderDate" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DueDate]"
+                          dataType="dbTimeStamp"
+                          name="DueDate" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipDate]"
+                          dataType="dbTimeStamp"
+                          name="ShipDate" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -2740,13 +2881,13 @@
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">#{Package\WH_Person\Data Flow Task PersonDim\Person.Outputs[OLE DB Source Output].Columns[FirstName]} + " " + #{Package\WH_Person\Data Flow Task PersonDim\Person.Outputs[OLE DB Source Output].Columns[MiddleName]} + " " + #{Package\WH_Person\Data Flow Task PersonDim\Person.Outputs[OLE DB Source Output].Columns[LastName]}</property>
+                              name="Expression">([ISNULL](#{Package\WH_Person\Data Flow Task PersonDim\Person.Outputs[OLE DB Source Output].Columns[FirstName]}) ? "" : #{Package\WH_Person\Data Flow Task PersonDim\Person.Outputs[OLE DB Source Output].Columns[FirstName]}) + " " + ([ISNULL](#{Package\WH_Person\Data Flow Task PersonDim\Person.Outputs[OLE DB Source Output].Columns[MiddleName]}) ? "" : #{Package\WH_Person\Data Flow Task PersonDim\Person.Outputs[OLE DB Source Output].Columns[MiddleName]}) + " " + ([ISNULL](#{Package\WH_Person\Data Flow Task PersonDim\Person.Outputs[OLE DB Source Output].Columns[LastName]}) ? "" : #{Package\WH_Person\Data Flow Task PersonDim\Person.Outputs[OLE DB Source Output].Columns[LastName]})</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">FirstName + " " + MiddleName + " " + LastName</property>
+                              name="FriendlyExpression">(ISNULL(FirstName) ? "" : FirstName) + " " + (ISNULL(MiddleName) ? "" : MiddleName) + " " + (ISNULL(LastName) ? "" : LastName)</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -5159,6 +5300,13 @@
                           cachedName="EndDate"
                           externalMetadataColumnId="Package\WH_Person\Data Flow Task PersonDim\WH_Person Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndDate]"
                           lineageId="Package\WH_Person\Data Flow Task PersonDim\EndStartDate.Outputs[Derived Column Output].Columns[EndDate]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task PersonDim\WH_Person Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                          cachedDataType="wstr"
+                          cachedLength="152"
+                          cachedName="Name"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task PersonDim\WH_Person Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                          lineageId="Package\WH_Person\Data Flow Task PersonDim\Merge Join PersonDim.Outputs[Merge Join Output].Columns[Name]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -5179,7 +5327,7 @@
                         <externalMetadataColumn
                           refId="Package\WH_Person\Data Flow Task PersonDim\WH_Person Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                           dataType="wstr"
-                          length="150"
+                          length="152"
                           name="Name" />
                         <externalMetadataColumn
                           refId="Package\WH_Person\Data Flow Task PersonDim\WH_Person Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmailPromotion]"
@@ -5336,6 +5484,295 @@
             <pipeline
               version="1">
               <components>
+                <component
+                  refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="DateDim"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DateDim]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1251</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">true</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[POVSTENKO.WH_Person]"
+                      connectionManagerRefId="Package.ConnectionManagers[POVSTENKO.WH_Person]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="RedirectRow"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].Columns[OrderDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="OrderDate"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].ExternalColumns[OrderDate]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[OrderDate]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].Columns[DueDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="DueDate"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].ExternalColumns[DueDate]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[DueDate]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].Columns[ShipDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="ShipDate"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].ExternalColumns[ShipDate]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipDate]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].ExternalColumns[DateID]"
+                          dataType="i4"
+                          name="DateID" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].ExternalColumns[OrderDate]"
+                          dataType="dbTimeStamp"
+                          name="OrderDate" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].ExternalColumns[DueDate]"
+                          dataType="dbTimeStamp"
+                          name="DueDate" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input].ExternalColumns[ShipDate]"
+                          dataType="dbTimeStamp"
+                          name="ShipDate" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="1058"
+                  name="Flat File Destination"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                          cachedDataType="i4"
+                          cachedName="ErrorCode"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                          cachedDataType="i4"
+                          cachedName="ErrorColumn"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[DueDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="DueDate"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DueDate]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[DueDate]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[ShipDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="ShipDate"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipDate]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipDate]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].Columns[OrderDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="OrderDate"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderDate]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[OrderDate]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          dataType="i4"
+                          name="ErrorCode" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          dataType="i4"
+                          name="ErrorColumn" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesOrderID]"
+                          dataType="i4"
+                          name="SalesOrderID" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OnlineOrderFlag]"
+                          dataType="bool"
+                          name="OnlineOrderFlag" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CustomerID]"
+                          dataType="i4"
+                          name="CustomerID" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SubTotal]"
+                          dataType="cy"
+                          name="SubTotal" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TaxAmt]"
+                          dataType="cy"
+                          name="TaxAmt" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Freight]"
+                          dataType="cy"
+                          name="Freight" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderQty]"
+                          dataType="i2"
+                          name="OrderQty" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
+                          dataType="i4"
+                          name="ProductID" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UnitPrice]"
+                          dataType="cy"
+                          name="UnitPrice" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineTotal]"
+                          dataType="numeric"
+                          name="LineTotal"
+                          precision="38"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipMethod]"
+                          dataType="wstr"
+                          length="50"
+                          name="ShipMethod" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipBase]"
+                          dataType="cy"
+                          name="ShipBase" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipRate]"
+                          dataType="cy"
+                          name="ShipRate" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TotalDue]"
+                          dataType="cy"
+                          name="TotalDue" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderDate]"
+                          dataType="dbTimeStamp"
+                          name="OrderDate" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DueDate]"
+                          dataType="dbTimeStamp"
+                          name="DueDate" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ShipDate]"
+                          dataType="dbTimeStamp"
+                          name="ShipDate" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
                 <component
                   refId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader"
                   componentClassID="Microsoft.MergeJoin"
@@ -5786,6 +6223,21 @@
                           cachedDataType="cy"
                           cachedName="TotalDue"
                           lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderHeader 2.Outputs[Sort Output].Columns[TotalDue]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Inputs[Merge Join Left Input].Columns[OrderDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="OrderDate"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderHeader 2.Outputs[Sort Output].Columns[OrderDate]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Inputs[Merge Join Left Input].Columns[DueDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="DueDate"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderHeader 2.Outputs[Sort Output].Columns[DueDate]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Inputs[Merge Join Left Input].Columns[ShipDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="ShipDate"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderHeader 2.Outputs[Sort Output].Columns[ShipDate]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -6010,226 +6462,84 @@
                               name="InputColumnID">#{Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Inputs[Merge Join Left Input].Columns[TotalDue]}</property>
                           </properties>
                         </outputColumn>
+                        <outputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[OrderDate]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[OrderDate]"
+                          name="OrderDate">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="The input column associated with this output column"
+                              name="InputColumnID">#{Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Inputs[Merge Join Left Input].Columns[OrderDate]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[DueDate]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[DueDate]"
+                          name="DueDate">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="The input column associated with this output column"
+                              name="InputColumnID">#{Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Inputs[Merge Join Left Input].Columns[DueDate]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipDate]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipDate]"
+                          name="ShipDate">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="The input column associated with this output column"
+                              name="InputColumnID">#{Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Inputs[Merge Join Left Input].Columns[ShipDate]}</property>
+                          </properties>
+                        </outputColumn>
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
                   </outputs>
                 </component>
                 <component
-                  refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination"
-                  componentClassID="Microsoft.OLEDBDestination"
-                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                  description="OLE DB Destination"
-                  name="OLE DB Destination"
-                  usesDispositions="true"
-                  version="4">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[dbo].[SalesOrderDim]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1251</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">3</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepIdentity">false</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepNulls">false</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                      name="FastLoadMaxInsertCommitSize">2147483647</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[POVSTENKO.WH_Person]"
-                      connectionManagerRefId="Package.ConnectionManagers[POVSTENKO.WH_Person]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
+                  refId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast"
+                  componentClassID="Microsoft.Multicast"
+                  contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+                  name="Multicast">
                   <inputs>
                     <input
-                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                      errorOrTruncationOperation="Insert"
-                      errorRowDisposition="FailComponent"
-                      hasSideEffects="true"
-                      name="OLE DB Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OnlineOrderFlag]"
-                          cachedDataType="bool"
-                          cachedName="OnlineOrderFlag"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OnlineOrderFlag]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[OnlineOrderFlag]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubTotal]"
-                          cachedDataType="cy"
-                          cachedName="SubTotal"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubTotal]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[SubTotal]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TaxAmt]"
-                          cachedDataType="cy"
-                          cachedName="TaxAmt"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TaxAmt]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[TaxAmt]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Freight]"
-                          cachedDataType="cy"
-                          cachedName="Freight"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Freight]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[Freight]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OrderQty]"
-                          cachedDataType="i2"
-                          cachedName="OrderQty"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OrderQty]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[OrderQty]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProductID]"
-                          cachedDataType="i4"
-                          cachedName="ProductID"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ProductID]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
-                          cachedDataType="cy"
-                          cachedName="UnitPrice"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[UnitPrice]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipMethod]"
-                          cachedDataType="wstr"
-                          cachedLength="50"
-                          cachedName="ShipMethod"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipMethod]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipMethod]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipBase]"
-                          cachedDataType="cy"
-                          cachedName="ShipBase"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipBase]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipBase]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipRate]"
-                          cachedDataType="cy"
-                          cachedName="ShipRate"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipRate]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipRate]" />
-                        <inputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TotalDue]"
-                          cachedDataType="cy"
-                          cachedName="TotalDue"
-                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalDue]"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[TotalDue]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderID]"
-                          dataType="i4"
-                          name="SalesOrderID" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OnlineOrderFlag]"
-                          dataType="i2"
-                          name="OnlineOrderFlag" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OrderQty]"
-                          dataType="i2"
-                          name="OrderQty" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
-                          dataType="i4"
-                          name="ProductID" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
-                          dataType="cy"
-                          name="UnitPrice" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubTotal]"
-                          dataType="cy"
-                          name="SubTotal" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TaxAmt]"
-                          dataType="cy"
-                          name="TaxAmt" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Freight]"
-                          dataType="cy"
-                          name="Freight" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalDue]"
-                          dataType="cy"
-                          name="TotalDue" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipMethod]"
-                          dataType="wstr"
-                          length="50"
-                          name="ShipMethod" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipBase]"
-                          dataType="cy"
-                          name="ShipBase" />
-                        <externalMetadataColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipRate]"
-                          dataType="cy"
-                          name="ShipRate" />
-                      </externalMetadataColumns>
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Inputs[Multicast Input 1]"
+                      name="Multicast Input 1">
+                      <externalMetadataColumns />
                     </input>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Outputs[Multicast Output 1]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 1"
+                      synchronousInputId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Outputs[Multicast Output 3]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 3"
+                      synchronousInputId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Outputs[Multicast Output 2]"
+                      dangling="true"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 2"
+                      synchronousInputId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Inputs[Multicast Input 1]">
                       <externalMetadataColumns />
                     </output>
                   </outputs>
@@ -6436,6 +6746,225 @@
                           refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDetail.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
                           lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDetail.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="SalesOrderDim"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[SalesOrderDim]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1251</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[POVSTENKO.WH_Person]"
+                      connectionManagerRefId="Package.ConnectionManagers[POVSTENKO.WH_Person]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[OnlineOrderFlag]"
+                          cachedDataType="bool"
+                          cachedName="OnlineOrderFlag"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[OnlineOrderFlag]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[OnlineOrderFlag]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[SubTotal]"
+                          cachedDataType="cy"
+                          cachedName="SubTotal"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[SubTotal]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[SubTotal]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[TaxAmt]"
+                          cachedDataType="cy"
+                          cachedName="TaxAmt"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[TaxAmt]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[TaxAmt]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[Freight]"
+                          cachedDataType="cy"
+                          cachedName="Freight"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[Freight]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[Freight]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[OrderQty]"
+                          cachedDataType="i2"
+                          cachedName="OrderQty"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[OrderQty]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[OrderQty]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[ProductID]"
+                          cachedDataType="i4"
+                          cachedName="ProductID"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ProductID]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
+                          cachedDataType="cy"
+                          cachedName="UnitPrice"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[UnitPrice]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[ShipMethod]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="ShipMethod"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[ShipMethod]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipMethod]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[ShipBase]"
+                          cachedDataType="cy"
+                          cachedName="ShipBase"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[ShipBase]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipBase]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[ShipRate]"
+                          cachedDataType="cy"
+                          cachedName="ShipRate"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[ShipRate]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[ShipRate]" />
+                        <inputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].Columns[TotalDue]"
+                          cachedDataType="cy"
+                          cachedName="TotalDue"
+                          externalMetadataColumnId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[TotalDue]"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output].Columns[TotalDue]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderID]"
+                          dataType="i4"
+                          name="SalesOrderID" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[OnlineOrderFlag]"
+                          dataType="i2"
+                          name="OnlineOrderFlag" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[OrderQty]"
+                          dataType="i2"
+                          name="OrderQty" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                          dataType="i4"
+                          name="ProductID" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                          dataType="cy"
+                          name="UnitPrice" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[SubTotal]"
+                          dataType="cy"
+                          name="SubTotal" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[TaxAmt]"
+                          dataType="cy"
+                          name="TaxAmt" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[Freight]"
+                          dataType="cy"
+                          name="Freight" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[TotalDue]"
+                          dataType="cy"
+                          name="TotalDue" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[ShipMethod]"
+                          dataType="wstr"
+                          length="50"
+                          name="ShipMethod" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[ShipBase]"
+                          dataType="cy"
+                          name="ShipBase" />
+                        <externalMetadataColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input].ExternalColumns[ShipRate]"
+                          dataType="cy"
+                          name="ShipRate" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -8229,9 +8758,24 @@
                   startId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader.Outputs[Merge Join Output]" />
                 <path
                   refId="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Merge Join Output1]"
-                  endId="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  endId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Inputs[Multicast Input 1]"
                   name="Merge Join Output"
                   startId="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2.Outputs[Merge Join Output]" />
+                <path
+                  refId="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Multicast Output 1]"
+                  endId="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim.Inputs[OLE DB Destination Input]"
+                  name="Multicast Output 1"
+                  startId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Outputs[Multicast Output 1]" />
+                <path
+                  refId="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Multicast Output 3]"
+                  endId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Inputs[OLE DB Destination Input]"
+                  name="Multicast Output 3"
+                  startId="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast.Outputs[Multicast Output 3]" />
+                <path
+                  refId="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[OLE DB Destination Error Output]"
+                  endId="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination.Inputs[Flat File Destination Input]"
+                  name="OLE DB Destination Error Output"
+                  startId="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim.Outputs[OLE DB Destination Error Output]" />
                 <path
                   refId="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[OLE DB Source Output]"
                   endId="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderDetail.Inputs[Sort Input]"
@@ -8380,33 +8924,45 @@
           Id="Package\WH_Person\Data Flow Task AddressDim\Sort StateProvince 2"
           TopLeft="298.13332028654,250.93333504147" />
         <NodeLayout
-          Size="116.8,41.6"
-          Id="Package\WH_Person\Data Flow Task AddressDim\Address"
-          TopLeft="55.8999971191101,185.066667851342" />
+          Size="138.4,41.6"
+          Id="Package\WH_Person\Data Flow Task AddressDim\Sort Address"
+          TopLeft="53,249.200001694361" />
         <NodeLayout
-          Size="197.6,41.6"
-          Id="Package\WH_Person\Data Flow Task AddressDim\Merge Join StateProvince"
-          TopLeft="292.33332366414,185.066667851343" />
-        <NodeLayout
-          Size="184,41.6"
-          Id="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim"
-          TopLeft="209.66666044129,328.066668987805" />
-        <NodeLayout
-          Size="143.2,41.6"
-          Id="Package\WH_Person\Data Flow Task AddressDim\StateProvince"
-          TopLeft="233.99999264876,36" />
-        <NodeLayout
-          Size="148,41.6"
-          Id="Package\WH_Person\Data Flow Task AddressDim\CountryRegion"
-          TopLeft="425.66665169928,36.8666666735544" />
+          Size="152.8,41.6"
+          Id="Package\WH_Person\Data Flow Task AddressDim\Derived Column"
+          TopLeft="140,394" />
         <NodeLayout
           Size="169.6,41.6"
           Id="Package\WH_Person\Data Flow Task AddressDim\Sort CountryRegion"
           TopLeft="410.66665229532,108.800000578563" />
         <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\WH_Person\Data Flow Task AddressDim\Sort Address"
-          TopLeft="53,249.200001694361" />
+          Size="143.2,41.6"
+          Id="Package\WH_Person\Data Flow Task AddressDim\StateProvince"
+          TopLeft="233.99999264876,36" />
+        <NodeLayout
+          Size="184,41.6"
+          Id="Package\WH_Person\Data Flow Task AddressDim\Merge Join AddresDim"
+          TopLeft="209.66666044129,328.066668987805" />
+        <NodeLayout
+          Size="193.6,41.6"
+          Id="Package\WH_Person\Data Flow Task AddressDim\WH_Person AddressDim"
+          TopLeft="151,491" />
+        <NodeLayout
+          Size="197.6,41.6"
+          Id="Package\WH_Person\Data Flow Task AddressDim\Merge Join StateProvince"
+          TopLeft="292.33332366414,185.066667851343" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination"
+          TopLeft="216,590" />
+        <NodeLayout
+          Size="116.8,41.6"
+          Id="Package\WH_Person\Data Flow Task AddressDim\Address"
+          TopLeft="55.8999971191101,185.066667851342" />
+        <NodeLayout
+          Size="148,41.6"
+          Id="Package\WH_Person\Data Flow Task AddressDim\CountryRegion"
+          TopLeft="425.66665169928,36.8666666735544" />
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\WH_Person\Data Flow Task AddressDim\Sort StateProvince"
@@ -8614,35 +9170,41 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\WH_Person\Data Flow Task AddressDim.Paths[Merge Join Output]"
-          TopLeft="388.03332197534,226.666667851343">
+          Id="Package\WH_Person\Data Flow Task AddressDim.Paths[OLE DB Destination Error Output]"
+          TopLeft="247.8,532.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,24.2666671901278"
+              EndConnector="53.4,57.3999999999998"
               Start="0,0"
-              End="0,16.7666671901278">
+              End="53.4,49.8999999999998">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.7666671901278" />
+                    End="0,24.6999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.6999999999999"
+                    Point2="0,28.6999999999999"
+                    Point3="4,28.6999999999999" />
+                  <mssgle:LineSegment
+                    End="49.4,28.6999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="49.4,28.6999999999999"
+                    Point2="53.4,28.6999999999999"
+                    Point3="53.4,32.6999999999999" />
+                  <mssgle:LineSegment
+                    End="53.4,49.8999999999998" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-46.50890625,33.6999999999999,146.4178125,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="193.6,41.6"
-          Id="Package\WH_Person\Data Flow Task AddressDim\WH_Person AddressDim"
-          TopLeft="151,491" />
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\WH_Person\Data Flow Task AddressDim\Derived Column"
-          TopLeft="140,394" />
         <EdgeLayout
           Id="Package\WH_Person\Data Flow Task AddressDim.Paths[Merge Join Output1]"
           TopLeft="301.66666044129,369.666668987805">
@@ -8669,6 +9231,28 @@
                     Point3="-85.26666044129,16.1666655060975" />
                   <mssgle:LineSegment
                     End="-85.26666044129,16.8333310121951" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\WH_Person\Data Flow Task AddressDim.Paths[Merge Join Output]"
+          TopLeft="388.03332197534,226.666667851343">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24.2666671901278"
+              Start="0,0"
+              End="0,16.7666671901278">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.7666671901278" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8708,54 +9292,25 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="7.70000000000002,32.7000000000001,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\WH_Person\Data Flow Task AddressDim\Flat File Destination"
-          TopLeft="216,590" />
-        <EdgeLayout
-          Id="Package\WH_Person\Data Flow Task AddressDim.Paths[OLE DB Destination Error Output]"
-          TopLeft="247.8,532.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="53.4,57.3999999999998"
-              Start="0,0"
-              End="53.4,49.8999999999998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.6999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.6999999999999"
-                    Point2="0,28.6999999999999"
-                    Point3="4,28.6999999999999" />
-                  <mssgle:LineSegment
-                    End="49.4,28.6999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="49.4,28.6999999999999"
-                    Point2="53.4,28.6999999999999"
-                    Point3="53.4,32.6999999999999" />
-                  <mssgle:LineSegment
-                    End="53.4,49.8999999999998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-46.50890625,33.6999999999999,146.4178125,11.43359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\WH_Person\Data Flow Task AddressDim\WH_Person AddressDim">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\WH_Person\Data Flow Task PersonDim">
     <LayoutInfo>
@@ -8825,6 +9380,10 @@
           Size="189.6,41.6"
           Id="Package\WH_Person\Data Flow Task PersonDim\WH_Person Destination"
           TopLeft="60.8333309160341,412.600002954801" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\WH_Person\Data Flow Task PersonDim\Data Conversion"
+          TopLeft="415.833316809602,366.200001715024" />
         <EdgeLayout
           Id="Package\WH_Person\Data Flow Task PersonDim.Paths[Sort Output4]"
           TopLeft="864.533304988014,225.333334793515">
@@ -9078,6 +9637,70 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\WH_Person\Data Flow Task PersonDim.Paths[OLE DB Destination Error Output]"
+          TopLeft="155.633330916034,454.200002954801">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="101.233328929212,44.3999982229867"
+              Start="0,0"
+              End="101.233328929212,36.8999982229867">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.1999991114934" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.1999991114934"
+                    Point2="0,22.1999991114934"
+                    Point3="4,22.1999991114934" />
+                  <mssgle:LineSegment
+                    End="97.2333289292125,22.1999991114934" />
+                  <mssgle:CubicBezierSegment
+                    Point1="97.2333289292125,22.1999991114934"
+                    Point2="101.233328929212,22.1999991114934"
+                    Point3="101.233328929212,26.1999991114934" />
+                  <mssgle:LineSegment
+                    End="101.233328929212,36.8999982229867" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-22.5922417853937,27.1999991114934,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\WH_Person\Data Flow Task PersonDim.Paths[Merge Join Output2]"
+          TopLeft="519.166646036838,331.066669132445">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-25.3333292272359,35.133332582579"
+              Start="0,0"
+              End="-25.3333292272359,27.633332582579">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-21.3333292272359,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-21.3333292272359,0"
+                    Point2="-25.3333292272359,0"
+                    Point3="-25.3333292272359,4" />
+                  <mssgle:LineSegment
+                    End="-25.3333292272359,27.633332582579" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\WH_Person\Data Flow Task PersonDim.Paths[Merge Join Output1]"
           TopLeft="383.433321975338,230.533334834841">
           <EdgeLayout.Curve>
@@ -9158,9 +9781,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.7833286311893,5,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9177,74 +9798,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,29.7666692770852" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\WH_Person\Data Flow Task PersonDim.Paths[OLE DB Destination Error Output]"
-          TopLeft="155.633330916034,454.200002954801">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="101.233328929212,44.3999982229867"
-              Start="0,0"
-              End="101.233328929212,36.8999982229867">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.1999991114934" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.1999991114934"
-                    Point2="0,22.1999991114934"
-                    Point3="4,22.1999991114934" />
-                  <mssgle:LineSegment
-                    End="97.2333289292125,22.1999991114934" />
-                  <mssgle:CubicBezierSegment
-                    Point1="97.2333289292125,22.1999991114934"
-                    Point2="101.233328929212,22.1999991114934"
-                    Point3="101.233328929212,26.1999991114934" />
-                  <mssgle:LineSegment
-                    End="101.233328929212,36.8999982229867" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-22.5922417853937,27.1999991114934,146.4178125,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\WH_Person\Data Flow Task PersonDim\Data Conversion"
-          TopLeft="415.833316809602,366.200001715024" />
-        <EdgeLayout
-          Id="Package\WH_Person\Data Flow Task PersonDim.Paths[Merge Join Output2]"
-          TopLeft="519.166646036838,331.066669132445">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-25.3333292272359,35.133332582579"
-              Start="0,0"
-              End="-25.3333292272359,27.633332582579">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-21.3333292272359,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-21.3333292272359,0"
-                    Point2="-25.3333292272359,0"
-                    Point3="-25.3333292272359,4" />
-                  <mssgle:LineSegment
-                    End="-25.3333292272359,27.633332582579" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9353,111 +9906,47 @@
     design-time-name="Package\WH_Person\Data Flow Task SalesOrderDim">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="187.2,41.6"
-          Id="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderHeader"
-          TopLeft="50.0000000000001,80.4814852804016" />
-        <NodeLayout
-          Size="195.2,41.6"
-          Id="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderHeader 2"
-          TopLeft="252.374073856996,215.200000723204" />
-        <NodeLayout
-          Size="133.6,41.6"
-          Id="Package\WH_Person\Data Flow Task SalesOrderDim\ShipMethod"
-          TopLeft="612.574057322227,126.466664761085" />
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderHeader"
-          TopLeft="49.8703698589484,4.49630117351665" />
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157.6,41.6"
           Id="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDetail"
           TopLeft="336.222212994541,9.25185682090773" />
         <NodeLayout
+          Size="133.6,41.6"
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim\ShipMethod"
+          TopLeft="612.574057322227,126.466664761085" />
+        <NodeLayout
+          Size="195.2,41.6"
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderHeader 2"
+          TopLeft="252.374073856996,215.200000723204" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim"
+          TopLeft="279,481" />
+        <NodeLayout
           Size="228,41.6"
           Id="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader 2"
           TopLeft="400.707402885549,287" />
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\WH_Person\Data Flow Task SalesOrderDim\Sort ShipMethod"
-          TopLeft="583.307397521132,207.933334938156" />
         <NodeLayout
           Size="180,41.6"
           Id="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderDetail"
           TopLeft="308.333324657549,83.0814855788666" />
         <NodeLayout
+          Size="187.2,41.6"
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim\Sort SalesOrderHeader"
+          TopLeft="50.0000000000001,80.4814852804016" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim\Sort ShipMethod"
+          TopLeft="583.307397521132,207.933334938156" />
+        <NodeLayout
           Size="219.2,41.6"
           Id="Package\WH_Person\Data Flow Task SalesOrderDim\Merge Join SalesOrderHeader"
           TopLeft="151.59258851593,147.800000704837" />
-        <EdgeLayout
-          Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Sort Output3]"
-          TopLeft="173.466666666667,122.081485280402">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="87.7259218492633,25.7185154244353"
-              Start="0,0"
-              End="87.7259218492633,18.2185154244353">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,6.41817828210175" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,6.41817828210175"
-                    Point2="0,10.4181782821018"
-                    Point3="4,10.4181782821018" />
-                  <mssgle:LineSegment
-                    End="83.7259218492633,10.4181782821018" />
-                  <mssgle:CubicBezierSegment
-                    Point1="83.7259218492633,10.4181782821018"
-                    Point2="87.7259218492633,10.4181782821018"
-                    Point3="87.7259218492633,14.4181782821018" />
-                  <mssgle:LineSegment
-                    End="87.7259218492633,18.2185154244353" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Sort Output2]"
-          TopLeft="636.640730854465,249.533334938156">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-121.933327968916,37.466665061844"
-              Start="0,0"
-              End="-121.933327968916,29.966665061844">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.2148893652158" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.2148893652158"
-                    Point2="0,15.2148893652158"
-                    Point3="-4,15.2148893652158" />
-                  <mssgle:LineSegment
-                    End="-117.933327968916,15.2148893652158" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-117.933327968916,15.2148893652158"
-                    Point2="-121.933327968916,15.2148893652158"
-                    Point3="-121.933327968916,19.2148893652158" />
-                  <mssgle:LineSegment
-                    End="-121.933327968916,29.966665061844" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderHeader"
+          TopLeft="49.8703698589484,4.49630117351665" />
         <EdgeLayout
           Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Sort Output1]"
           TopLeft="381.174073856996,256.800000723204">
@@ -9566,9 +10055,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="11.3296301410516,34.385184106885"
+              EndConnector="11.3296301410517,34.385184106885"
               Start="0,0"
-              End="11.3296301410516,26.885184106885">
+              End="11.3296301410517,26.885184106885">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -9579,13 +10068,13 @@
                     Point2="0,17.1925920534425"
                     Point3="4,17.1925920534425" />
                   <mssgle:LineSegment
-                    End="7.32963014105164,17.1925920534425" />
+                    End="7.32963014105167,17.1925920534425" />
                   <mssgle:CubicBezierSegment
-                    Point1="7.32963014105164,17.1925920534425"
-                    Point2="11.3296301410516,17.1925920534425"
-                    Point3="11.3296301410516,21.1925920534425" />
+                    Point1="7.32963014105167,17.1925920534425"
+                    Point2="11.3296301410517,17.1925920534425"
+                    Point3="11.3296301410517,21.1925920534425" />
                   <mssgle:LineSegment
-                    End="11.3296301410516,26.885184106885" />
+                    End="11.3296301410517,26.885184106885" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9662,30 +10151,210 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination"
-          TopLeft="432,473" />
         <EdgeLayout
-          Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Merge Join Output1]"
-          TopLeft="516.153701442774,328.6">
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Sort Output3]"
+          TopLeft="173.466666666667,122.081485280402">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,144.4"
+              EndConnector="87.7259218492633,25.7185154244353"
               Start="0,0"
-              End="0,136.9">
+              End="87.7259218492633,18.2185154244353">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,136.9" />
+                    End="0,6.41817828210175" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,6.41817828210175"
+                    Point2="0,10.4181782821018"
+                    Point3="4,10.4181782821018" />
+                  <mssgle:LineSegment
+                    End="83.7259218492633,10.4181782821018" />
+                  <mssgle:CubicBezierSegment
+                    Point1="83.7259218492633,10.4181782821018"
+                    Point2="87.7259218492633,10.4181782821018"
+                    Point3="87.7259218492633,14.4181782821018" />
+                  <mssgle:LineSegment
+                    End="87.7259218492633,18.2185154244353" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Sort Output2]"
+          TopLeft="636.640730854465,249.533334938156">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-121.933327968916,37.466665061844"
+              Start="0,0"
+              End="-121.933327968916,29.966665061844">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.2148893652158" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.2148893652158"
+                    Point2="0,15.2148893652158"
+                    Point3="-4,15.2148893652158" />
+                  <mssgle:LineSegment
+                    End="-117.933327968916,15.2148893652158" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117.933327968916,15.2148893652158"
+                    Point2="-121.933327968916,15.2148893652158"
+                    Point3="-121.933327968916,19.2148893652158" />
+                  <mssgle:LineSegment
+                    End="-121.933327968916,29.966665061844" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim\Multicast"
+          TopLeft="454,360" />
+        <EdgeLayout
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Merge Join Output1]"
+          TopLeft="514.153701442774,328.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.4"
+              Start="0,0"
+              End="0,23.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Multicast Output 1]"
+          TopLeft="495.066666666667,401.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-141.266666666667,79.3999999999999"
+              Start="0,0"
+              End="-141.266666666667,71.8999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.3909933774834" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.3909933774834"
+                    Point2="0,32.3909933774834"
+                    Point3="-4,32.3909933774834" />
+                  <mssgle:LineSegment
+                    End="-137.266666666667,32.3909933774834" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-137.266666666667,32.3909933774834"
+                    Point2="-141.266666666667,32.3909933774834"
+                    Point3="-141.266666666667,36.3909933774834" />
+                  <mssgle:LineSegment
+                    End="-141.266666666667,71.8999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim"
+          TopLeft="562,479" />
+        <EdgeLayout
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[Multicast Output 3]"
+          TopLeft="532.133333333333,401.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="89.4666666666667,77.4000000000004"
+              Start="0,0"
+              End="89.4666666666667,69.9000000000004">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5750993377485" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5750993377485"
+                    Point2="0,31.5750993377485"
+                    Point3="4,31.5750993377485" />
+                  <mssgle:LineSegment
+                    End="85.4666666666667,31.5750993377485" />
+                  <mssgle:CubicBezierSegment
+                    Point1="85.4666666666667,31.5750993377485"
+                    Point2="89.4666666666667,31.5750993377485"
+                    Point3="89.4666666666667,35.5750993377485" />
+                  <mssgle:LineSegment
+                    End="89.4666666666667,69.9000000000004" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim\Flat File Destination"
+          TopLeft="662,557" />
+        <EdgeLayout
+          Id="Package\WH_Person\Data Flow Task SalesOrderDim.Paths[OLE DB Destination Error Output]"
+          TopLeft="621.6,520.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="125.6,36.3999999999996"
+              Start="0,0"
+              End="125.6,28.8999999999996">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.1999999999998" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.1999999999998"
+                    Point2="0,18.1999999999998"
+                    Point3="4,18.1999999999998" />
+                  <mssgle:LineSegment
+                    End="121.6,18.1999999999998" />
+                  <mssgle:CubicBezierSegment
+                    Point1="121.6,18.1999999999998"
+                    Point2="125.6,18.1999999999998"
+                    Point3="125.6,22.1999999999998" />
+                  <mssgle:LineSegment
+                    End="125.6,28.8999999999996" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-10.40890625,23.1999999999998,146.4178125,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9705,7 +10374,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\WH_Person\Data Flow Task AddressDim\WH_Person AddressDim">
+    design-time-name="Package\WH_Person\Data Flow Task SalesOrderDim\SalesOrderDim">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9718,7 +10387,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\WH_Person\Data Flow Task SalesOrderDim\OLE DB Destination">
+    design-time-name="Package\WH_Person\Data Flow Task SalesOrderDim\DateDim">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
