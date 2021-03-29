@@ -1,3 +1,8 @@
+USE master
+GO
+DROP DATABASE WH_Person
+GO
+
 CREATE DATABASE WH_Person
 GO
 USE WH_Person
@@ -60,11 +65,17 @@ GO
 
 CREATE TABLE [DateDim]
 (
- [DateID]    int PRIMARY KEY IDENTITY NOT NULL,
- [OrderDate] datetime NOT NULL,
- [DueDate]   datetime NOT NULL,
- [ShipDate]  datetime NOT NULL
-);
+ [DateID]		  int PRIMARY KEY IDENTITY NOT NULL,
+ [FullDate]	      datetime NOT NULL,
+ [Year]           smallint NOT NULL,
+ [HalfYear]       tinyint NOT NULL,
+ [Quarter]        tinyint NOT NULL,
+ [MonthNumOfYear] tinyint NOT NULL,
+ [MonthName]      nvarchar(30) NOT NULL,
+ [DayNumOfMonth]  tinyint NOT NULL,
+ [DayNameOfWeek]  nvarchar(30) NOT NULL,
+ [WeekNumOfMonth] tinyint NOT NULL
+ );
 GO
 
 -- ************************************** [Facts]
@@ -82,28 +93,4 @@ CREATE TABLE [Facts]
  CONSTRAINT [FK_59] FOREIGN KEY ([SalesOrderID])  REFERENCES [SalesOrderDim]([SalesOrderID]),
  CONSTRAINT [FK_68] FOREIGN KEY ([DateID])  REFERENCES [DateDim]([DateID])
 );
-GO
-
-CREATE NONCLUSTERED INDEX [fkIdx_40] ON [Facts] 
- (
-  [AddressID] ASC
- )
-GO
-
-CREATE NONCLUSTERED INDEX [fkIdx_43] ON [Facts] 
- (
-  [PersonID] ASC
- )
-GO
-
-CREATE NONCLUSTERED INDEX [fkIdx_60] ON [Facts] 
- (
-  [SalesOrderID] ASC
- )
-GO
-
-CREATE NONCLUSTERED INDEX [fkIdx_69] ON [Facts] 
- (
-  [DateID] ASC
- )
 GO
