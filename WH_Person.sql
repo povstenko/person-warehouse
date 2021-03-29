@@ -1,8 +1,3 @@
-USE master
-GO
-DROP DATABASE WH_Person
-GO
-
 CREATE DATABASE WH_Person
 GO
 USE WH_Person
@@ -12,7 +7,7 @@ GO
 
 CREATE TABLE [PersonDim]
 (
- [BussinessEntityID] int PRIMARY KEY IDENTITY NOT NULL,
+ [BusinessEntityID]  int PRIMARY KEY IDENTITY NOT NULL,
  [PersonType]        nvarchar(2) NOT NULL,
  [Sex]               nvarchar(10) NULL,
  [Name]              nvarchar(152) NULL,
@@ -49,7 +44,6 @@ CREATE TABLE [SalesOrderDim]
  [SalesOrderID]    int PRIMARY KEY IDENTITY NOT NULL,
  [OnlineOrderFlag] smallint NOT NULL,
  [OrderQty]        smallint NOT NULL,
- [ProductID]       int NOT NULL,
  [UnitPrice]       money NOT NULL,
  [SubTotal]        money NOT NULL,
  [TaxAmt]          money NOT NULL,
@@ -89,7 +83,7 @@ CREATE TABLE [Facts]
  [DateID]       int NOT NULL,
 
  CONSTRAINT [FK_39] FOREIGN KEY ([AddressID])  REFERENCES [AddressDim]([AddressID]),
- CONSTRAINT [FK_42] FOREIGN KEY ([PersonID])  REFERENCES [PersonDim]([BussinessEntityID]),
+ CONSTRAINT [FK_42] FOREIGN KEY ([PersonID])  REFERENCES [PersonDim]([BusinessEntityID]),
  CONSTRAINT [FK_59] FOREIGN KEY ([SalesOrderID])  REFERENCES [SalesOrderDim]([SalesOrderID]),
  CONSTRAINT [FK_68] FOREIGN KEY ([DateID])  REFERENCES [DateDim]([DateID])
 );
